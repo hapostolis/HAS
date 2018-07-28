@@ -139,7 +139,6 @@ def main():
             if "-eb" in sys.argv[-1]:
                 f = open(file, "r").read()
                 f2 = base64.b64encode(f)
-                #f.close()
                 fil=open(file, "w")
                 fil.write(f2)
                 fil.close()
@@ -198,14 +197,13 @@ def main():
             print("[+] Saving > temporary_result_file.txt")
             print("[+] catting output with better look\n\033[93m")
             fil=open("temporary_result_file.txt", "r").read()
-            #fil = re.sub(fil[-1],"",fil)
             print fil
             print("\033[0m\n[+] Trying to remove selected special character")
             fil = re.sub(special_character, " ", fil)
             print("[+] Printing final result")
             print('\n\033[46m' + fil + "\033[0m")
             print("\033[0m\n[+] Removing temporary_result_file.txt")
-            #os.system("rm temporary_result_file.txt")
+            os.system("rm temporary_result_file.txt")
             sys.exit()
         except KeyboardInterrupt:
             print("\nInterrupted by user..")
