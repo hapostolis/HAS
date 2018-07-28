@@ -4,7 +4,7 @@ problem = ""
 run = ""
 inputt = ""
 def help():
-    print("Encoding-Decoding tool")
+    print("Hidac Encoding-Decoding tool")
     print("Usage: ./hidac.py [type] [Option A] [number] [file] [Option B]")
     print("\033[1m------------------------------------------------------------------------\033[0m")
     print("\033[47m\033[90m[type]\033[0m")
