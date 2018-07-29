@@ -1,2 +1,2 @@
-# hidac
-<p>Hidac is an encoding tool<p/>
+# HAS 
+<p>HAS is an encoding tool<p/>
